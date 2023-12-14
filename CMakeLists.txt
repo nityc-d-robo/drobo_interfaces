@@ -14,9 +14,9 @@ find_package(ament_cmake REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
-	"msg/SolenoidStateMsg.msg"
   "msg/MdLibMsg.msg"
   "msg/SdLibMsg.msg"
+  "srv/SolenoidStateSrv.srv"
 )
 
 if(BUILD_TESTING)
