@@ -17,6 +17,8 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/MdLibMsg.msg"
   "msg/SdLibMsg.msg"
   "msg/BlMdLibMsg.msg"
+  "msg/DiffDrive.msg"
+  "msg/PointDrive.msg"
   "srv/SolenoidStateSrv.srv"
 )
 
