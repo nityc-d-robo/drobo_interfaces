@@ -1,3 +1,4 @@
-uint8 address # [0]
-bool port # [6]
-int16 angle # [6][7], use on speed mode or angle mode.
+uint8 address
+uint8 port
+uint8 mode
+uint8 angle
