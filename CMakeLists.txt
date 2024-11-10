@@ -11,6 +11,7 @@ find_package(ament_cmake REQUIRED)
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
 
+find_package(geometry_msgs REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
@@ -21,6 +22,9 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/DiffDrive.msg"
   "msg/PointDrive.msg"
   "srv/SolenoidStateSrv.srv"
+  "srv/OrderPose.srv"
+  DEPENDENCIES
+  geometry_msgs
 )
 
 if(BUILD_TESTING)
